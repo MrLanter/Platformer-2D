@@ -1,10 +1,10 @@
 # My platformer 2D
 
-![Image du jeu Platformer 2D](./look.png)
+![Platformer 2D game image](./look.png)
 
 ## Live Site URL
 
-TRY THE GAME HERE : [Live site]()
+Try the game here : [Live site](https://mrlanter.github.io/Platformer-2D/)
 
 ## Intro
 
@@ -28,6 +28,6 @@ I wanted to make a level editor, but it would be quite long to do it. So I would
 
 I did my best in this project, investing 3 full days in a row. I am still proud of myself, to have made a functional and rather qualitative game for 3 days. I helped myself with a little ChatGPT for just a few aspects that I did not know or that I had forgotten about JavaScript. Otherwise, I didn't use any components from another user, this is really a home-made website, with pure HTML, CSS and JavaScript.
 
-Dont forget to try the game ! : [Live site]()
+Dont forget to try the game ! : [Live site](https://mrlanter.github.io/Platformer-2D/)
 
 Thanks for your attention, see you next time.
