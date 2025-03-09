@@ -2,7 +2,7 @@
 
 ![Image du jeu Platformer 2D](./look.png)
 
-## Live Site URL (try the game here)
+## Live Site URL
 
 TRY THE GAME HERE : [Live site]()
 
