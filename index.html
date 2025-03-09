@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platformer 2D</title>
+    
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/menu.css">
+    <link rel="stylesheet" href="./styles/homepage.css">
+    <script defer src="./js/game.js"></script>
+    <script defer src="./js/menu.js"></script>
+    <script defer src="./js/player.js"></script>
+    <script defer src="./js/script.js"></script>
+</head>
+<body>
+    <div class="shadow"></div>
+    <main>
+        <h1 class="title">Platformer 2D</h1>
+        <button class="play-btn">Play<div class="fill"></div></button>
+        <article class="menu">
+            <header class="menu-header">
+                <button class="play">Play</button>
+                <button class="edit-levels">Edit levels</button>
+                <div class="selection"></div>
+            </header>
+            <main class="menu-main">
+                <div class="play-part">
+                    <button class="level unlocked">1</button>
+                    <button class="level">2</button>
+                    <button class="level">3</button>
+                    <button class="level">4</button>
+                    <button class="level">5</button>
+                </div>
+                <div class="edit-levels-part">
+                    <p style="font-size: 1.2rem;line-height: 1.8;">Coming Soon !<br><br> Do you like this game? Tell me on discord! (my username: miienzo) every suggestion is helpful! <br><br>After an update, you will be able to access a very customizable level editor!</p>
+                    <!-- <header>
+                        <button class="download-level" aria-label="Download the level">
+                            <img src="./assets/icons/download.svg" alt="Downloading icon">
+                        </button>
+                        <button class="upload-level" aria-label="Import the level">
+                            <img src="./assets/icons/upload.svg" alt="Uploading icon">
+                        </button>
+                    </header>
+                    <main>
+                        <ul>
+                            <li class="user-level">
+                                <p><span class="name">Sky crash</span><span class="version">v12</span></p>
+                                <button class="edit-level" aria-label="Edit a level">
+                                    <img src="./assets/icons/edit.svg" alt="Edition icon">
+                                </button>
+                            </li>
+                            <li class="user-level">
+                                <p><span class="name">Sky crash</span><span class="version">v12</span></p>
+                                <button class="edit-level" aria-label="Edit a level">
+                                    <img src="./assets/icons/edit.svg" alt="Edition icon">
+                                </button>
+                            </li>
+                            <li class="user-level">
+                                <p><span class="name">Sky crash</span><span class="version">v12</span></p>
+                                <button class="edit-level" aria-label="Edit a level">
+                                    <img src="./assets/icons/edit.svg" alt="Edition icon">
+                                </button>
+                            </li>
+                        </ul>
+                    </main> -->
+                </div>
+            </main>
+        </article>
+        <article class="playground">
+            <div class="left-components">
+                <p class="level-indicator">Level 1</p>
+                <button id="menu-btn" aria-label="Go to menu">
+                    <img src="./assets/icons/menu.svg" alt="Menu icon">
+                </button>
+            </div>
+            <p class="how-to-play-indicator">W to jump, A and S to move <br> arrow up, left and right</p>
+            <!-- <article class="floor"></article> -->
+        </article>
+    </main>
+</html>

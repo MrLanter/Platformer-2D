@@ -1,0 +1,153 @@
+.menu {
+	position: absolute;
+	/* margin: 0 auto; */
+	width: 43.75rem;
+	height: 25rem;
+	background-color: white;
+	border-radius: 25px;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	opacity: 0;
+	transition: 0.5s opacity ease, 0.5s transform ease;
+	transform: scale(1.5);
+	display: none;
+	z-index: 10;
+}
+
+.menu .menu-header {
+	display: flex;
+	gap: 20px;
+	position: relative;
+}
+
+.menu .menu-header button {
+	background-color: transparent;
+	border: 0;
+	font-weight: 600;
+	font-size: 2rem;
+	color: var(--primary-blue);
+	padding: 5px 40px 4px 40px;
+	cursor: pointer;
+	letter-spacing: 1px;
+	/* transition: 0.1s all ease; */
+}
+
+.menu .menu-header button.selected {
+	/* background-color: rgb(226, 88, 88); */
+	color: white;
+	cursor: default;
+	background-color: var(--primary-blue);
+	/* border: 1px solid var(--primary-blue); */
+}
+
+/* .menu .menu-header .selection {
+	width: 100px;
+	height: 55px;
+	border-radius: 15px;
+	position: absolute;
+	left: 0;
+	top: -5px;
+	z-index: -1;
+	transition: 0.3s all ease;
+} */
+
+.menu .menu-main .play-part {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.menu .menu-main .play-part .level {
+	width: 3rem;
+	height: 3rem;
+	font-weight: 600;
+	font-size: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2px 0 0 0;
+	color: white;
+	background-color: rgb(91, 116, 255);
+	border: 0;
+	border-radius: 5px;
+	transition: 0.1s all ease;
+	opacity: 0.3;
+	cursor: default;
+}
+
+.menu .menu-main .play-part .level.unlocked {
+	opacity: 1;
+	cursor: pointer;
+}
+
+.menu .menu-main .play-part .level.unlocked:hover {
+	background-color: rgb(65, 92, 242);
+}
+
+.menu .menu-main .edit-levels-part {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+.menu .menu-main .edit-levels-part header {
+	display: flex;
+	gap: 20px;
+}
+
+.menu .menu-main .edit-levels-part header button {
+	padding: 0;
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+	transition: 0.3s all ease;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu .menu-main .edit-levels-part header button:hover {
+	transform: rotate(5deg) scale(1.2);
+}
+
+.menu .menu-main .edit-levels-part header button img {
+	width: 2rem;
+	height: 2rem;
+}
+
+.menu .menu-main .edit-levels-part main {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	gap: 10px;
+}
+
+.menu .menu-main .edit-levels-part main ul {
+	width: 100%;
+}
+
+.menu .menu-main .edit-levels-part main .user-level {
+	width: 100%;
+	background-color: transparent;
+	border-radius: 10px;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	padding: 2px 0px 2px 20px;
+	cursor: pointer;
+	transition: 0.1s all ease;
+}
+
+.menu .menu-main .edit-levels-part main .user-level:hover {
+	background-color: rgb(214, 229, 255);
+}

@@ -1,0 +1,63 @@
+.title {
+	color: white;
+	font-size: 5rem;
+	font-weight: 800;
+	letter-spacing: 4px;
+	transform: scale(10);
+	opacity: 0;
+	transition: 0.5s transform ease, 2s color ease;
+	user-select: none;
+}
+
+.play-btn {
+	position: relative;
+	font-size: 3rem;
+	letter-spacing: 3px;
+	padding: 10px 100px 9px 100px;
+	font-weight: 600;
+	color: var(--primary-blue);
+	border-radius: 15px;
+	border: 0;
+	margin: 0 auto;
+	background-color: rgb(255, 91, 91);
+	transition: 2s transform ease, 2s background-color ease, 0s opacity ease; /* 0s for opacity, but it changes in js later */
+	cursor: pointer;
+	text-transform: uppercase;
+	transform: scale(0.8);
+	user-select: none;
+	opacity: 0;
+}
+
+.play-btn:hover {
+	transform: scale(1.1);
+}
+
+.play-btn::after {
+	transition: 0.3s all ease;
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: calc(100% + 5px);
+	height: calc(100% + 5px);
+	filter: blur(20px);
+	opacity: 0;
+	background-color: rgb(255, 91, 91);
+	border-radius: 15px;
+	z-index: -1;
+}
+
+.play-btn:hover::after {
+	opacity: 0.2;
+}
+
+.fill {
+	position: absolute;
+	bottom: -2%;
+	left: -2%;
+	width: 104%;
+	height: 104%;
+	background-color: var(--primary-blue);
+	transition: 2s all ease;
+}
